@@ -1,2 +1,1 @@
-image:
-    file: gitpod.Dockerfile
+image: ghcr.io/pmoris/gitpod-bioinf-env:latest

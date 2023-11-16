@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+###############################################################
+# Script to remove PCR duplicates from bam files using Picard #
+###############################################################
+
 # make sure to run this script from within the directory where it is stored!
 
 # move to the directory containing aligned and sorted bam files
@@ -9,7 +13,7 @@ cd ../results/bwa
 output_dir="../../results/picard"
 mkdir -p ${output_dir}
 
-# loop through read pairs and map them using bwa
+# loop through bam alignments and remove duplicates
 for bam in *.bam
 do
     sample_name=$(basename ${bam} .bam)

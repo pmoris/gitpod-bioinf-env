@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+##########################################################
+# Script to map fastq files to reference genome with bwa #
+##########################################################
+
 # make sure to run this script from within the directory where it is stored!
 
 # move to the directory containing the fastq files

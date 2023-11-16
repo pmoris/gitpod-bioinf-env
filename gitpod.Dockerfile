@@ -41,6 +41,8 @@ ENV PATH="${HOME}/conda/bin:$PATH"
 RUN conda config --add channels bioconda && \
     mamba install --quiet --yes --name base \
         fastqc \
+        picard \
+        trimmomatic \
         bwa \
         samtools \
         vcftools \

@@ -47,12 +47,15 @@ RUN conda config --add channels bioconda && \
         samtools \
         vcftools \
         gatk4 \
-	sra-tools \
-	ffq \
+        sra-tools \
+        ffq \
         nextflow \
         nf-core \
         pytest-workflow && \
     mamba clean --all -f -y
+
+RUN conda init
+RUN mamba init
 
 RUN unset JAVA_TOOL_OPTIONS
 
